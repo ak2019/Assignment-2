@@ -1,32 +1,76 @@
 <!DOCTYPE html>
 <html>
 <head>
+
 	<title>Assignment-2</title>
 	<meta charset=utf-8>
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- 	<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-	<script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script> -->
+	<script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-orbit-controls@1.2.0/dist/aframe-orbit-controls.min.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Raleway:200,400,800|Clicker+Script' rel='stylesheet' type='text/css'>
+
+
 
 </head>
 <body>
-<!-- 	<a-scene>
-		<a-assets>
-			<a-asset-item id="pipe" src="model/gltf/pipe.gltf"> </a-asset-item>
-		</a-assets>
+		<!-- OBJECT INFO -->
 
-		    <a-entity camera look-controls orbit-controls="target: 0 1.6 -0.5; minDistance: 0.5; maxDistance: 180; initialPosition: 0 5 15"></a-entity>
+		<div class="info-card">
+			<h1 class="info-card__title">Tabacco Pipe</h1>
+			<p class="info-card__meta">From the lab of Dr. Louise Barrett</p>
+			<p class="info-card__date">1995</p>
+			<p class="info-card__desc">Info from: https://www.canadashistory.ca/explore/environment/blackfoot-bacco </p>>
+		<p> “[R]itual use of smoke represents a spirit, like the creation myth where it’s like Napi’s [the Blackfoot mythical creator] breath-you actually see it. These are the connections with smoking. It’s a physical manifestation of the spirit.” says Eldon Yellowhorn, a Blackfoot assistant professor of archaeology  at Simon Fraser University.</p>
 
-		
-		<a-entity gltf-model="#pipe"></a-entity>
-		
-	</a-scene>
- -->
+		</div>
 
+		<!-- A-Frame Scene -->
 
-	<script src="js/three.js"></script>	
-	<script src="js/OrbitControls.js"></script>
-	<script src="js/GLTFLoader.js"></script>
+		<div class="aframe-scene">
+
+			<a-scene embedded >
+		        
+		        <a-assets >
+		            <a-asset-item id="pipe" src="model/pipe/pipe.gltf"></a-asset-item>
+		            <!-- <img id="sky" src="img/bg.jpg"> -->
+		        </a-assets>
+
+		        <div id="large-header" class="large-header"> <!-- Fire  -->
+					<canvas id="demo-canvas"></canvas>
+				</div> 
+
+		        <a-light 
+			        type="ambient" 
+			        color="#fff" 
+			        intensity="5">
+		        </a-light>
+
+		        <a-entity 
+			        camera 
+			        look-controls 
+			        position="6 0 1">
+		        </a-entity>
+
+		      
+		        <a-entity 	
+		        	gltf-model="#pipe" 
+			        position="0 0 0" 
+			        rotation="90 0 90" 
+
+			        animation="property: rotation; to: 0 0 90; loop: true; dur: 10000">
+		        </a-entity>
+
+		</div>
+
+		<div class="project-info">
+			<h2> About</h2>
+			<p class="copyright">Object property of the Blackfoot People, courtesy of the Blackfoot Digital Library<p>
+	   		 <p class="copyright">Background Credit: <a href="http://creativeblend.blogspot.com/2011/08/hd-panorama-view-wallpapers.html" >creativeblend.blogspot.com</a><p>
+	   		 	<p>Created by GROUP C</p>
+	    </p>
+
 	<script src="js/js.js"></script>
 </body>
 </html>
