@@ -1,7 +1,40 @@
-body {
-	font-family: Monospace;
-	background-color: #000;
-	color: #fff;
-	margin: 0px;
-	overflow: hidden;
+* {
+	box-sizing: border-box;
 }
+
+html, body {
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+	background: rgba(122,78,24,1);
+	background: -moz-linear-gradient(top, rgba(122,78,24,1) 0%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(122,78,24,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(122,78,24,1) 0%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(122,78,24,1) 0%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(122,78,24,1) 0%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(122,78,24,1) 0%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a4e18', endColorstr='#000000', GradientType=0 );
+}
+
+.aframe-scene, a-scene {
+	width: 100vw;
+	height: 100vh;
+
+}
+
+.info-card {
+	color: white;
+	position: absolute;
+	z-index: 50;
+	width: 30%;
+	right: 10vw;
+	top: 10vw;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 30px;
+}
+
+.project-info {
+	margin-left: 10vw;
+	padding: 40px 0;
+}
+
