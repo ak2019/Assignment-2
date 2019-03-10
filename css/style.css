@@ -16,6 +16,10 @@ html, body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7a4e18', endColorstr='#000000', GradientType=0 );
 }
 
+a{
+	color: white;
+}
+
 .aframe-scene, a-scene {
 	width: 100vw;
 	height: 100vh;
